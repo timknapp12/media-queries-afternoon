@@ -1,0 +1,97 @@
+.App {
+  text-align: center;
+  background-image: url(./header-bg.jpg);
+  height: 491px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  height: 60px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #212529;
+  padding: 0px 10px;
+}
+
+.title {
+  color: #fed136;
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 700px;
+  font-size: 24px;
+}
+
+.menu-button {
+  height: 40px;
+  width: 70px;
+  border-radius: 4px;
+  background: #fed136;
+  border: none;
+  color: white;
+  font-size: 12px;
+}
+
+.links {
+  color: white;
+  display: none;
+}
+
+.links:hover {
+  color: #fed136;
+  text-decoration: underline;
+  font-size: 150%;
+  transition-timing-function: ease-in-out;
+  transition: .5s;
+
+}
+
+@media (min-width: 450px) {
+  nav {
+    justify-content: space-around;
+  }
+  .menu-button {
+    margin: 0px -20px;
+    transition-timing-function: ease-in-out;
+    transition: 2s;
+
+  }
+}
+
+@media (min-width: 780px) {
+  nav {
+    justify-content: space-around;
+    padding: 0px -90px;
+  }
+
+  .App {
+    height: 700px;
+  }
+}
+
+@media (min-width: 1000px) {
+  nav {
+    background: transparent;
+    height: 120px;
+    display: inline-flex;
+    transition-timing-function: ease-in-out;
+    transition: 1s;
+    justify-content: space-around;
+  }
+  .menu-button {
+    display: none;
+  }
+  .links {
+    width: 500px;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 30px;
+  }
+}
